@@ -38,8 +38,8 @@ st.markdown("""
 
         /* Logo Styling */
         .logo {
-            width: 120px;
-            margin-bottom: 10px;
+            width: 200px;
+            margin-bottom: 5px;
         }
         
         .logo-container {
@@ -81,19 +81,21 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
 # Display Logo
-st.markdown("<div class='logo-container'>", unsafe_allow_html=True)
-st.image("miva_logo.jpg", width=120)
-st.markdown("</div>", unsafe_allow_html=True)
-
-# <img src='miva_logo.jpg' class='logo' />
+st.markdown("""
+    <div class='logo-container'>
+        <img src='images/Miva_logo.png' class='logo' />
+    </div>
+""", unsafe_allow_html=True)
 
 # Main Container
 st.markdown("""
     <div class='container'>
         <h1>Welcome to the SIWES Management System</h1>
         <p class='description'>Manage SIWES supervision, assessment, and student progress tracking with ease.</p>
-        <a href='#' class='custom-button'>Go to Login Page</a>
     </div>
 """, unsafe_allow_html=True)
+
+# Redirect Button
+if st.button("Go to Login Page"):
+    st.switch_page("pages/login.py")  # Ensure the file exists
