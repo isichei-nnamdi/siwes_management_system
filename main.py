@@ -82,11 +82,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display Logo
-st.markdown("""
-    <div class='logo-container'>
-        <img src='https://raw.githubusercontent.com/isichei-nnamdi/siwes_management_system/main/images/Miva_logo.png' class='logo' />
-    </div>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <div class='logo-container'>
+#         <img src='https://raw.githubusercontent.com/isichei-nnamdi/siwes_management_system/main/images/Miva_logo.png' class='logo' />
+#     </div>
+# """, unsafe_allow_html=True)
+
+st.image("https://raw.githubusercontent.com/yourusername/yourrepo/main/images/miva_logo.jpg", width=120)
+
 
 # Main Container
 st.markdown("""
