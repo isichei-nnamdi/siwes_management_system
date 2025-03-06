@@ -84,7 +84,7 @@ st.markdown("""
 # Display Logo
 st.markdown("""
     <div class='logo-container'>
-        <img src='images/Miva_logo.png' class='logo' />
+        <img src='https://raw.githubusercontent.com/isichei-nnamdi/siwes_management_system/main/images/Miva_logo.png' class='logo' />
     </div>
 """, unsafe_allow_html=True)
 
